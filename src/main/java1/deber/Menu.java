@@ -4,12 +4,33 @@ import java.util.Scanner;
 
 public class Menu {
 	
-	public int cedula;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		int opcion;
 		Scanner teclado = new Scanner(System.in);
+		
+		Estudiante cedula1 = new Estudiante();
+		cedula1.getCedula();
+		
+		Estudiante cedula2 = new Estudiante();
+		cedula2.getCedula();
+		
+		Estudiante cedula3 = new Estudiante();
+		cedula3.getCedula();
+		
+		Estudiante cedula4 = new Estudiante();
+		cedula4.getCedula();
+		
+		Estudiante cedula5 = new Estudiante();
+		cedula5.getCedula();
+		
+		Estudiante[] cedula = new Estudiante[5];
+		cedula [0]=cedula1;
+		cedula [1]=cedula2;
+		cedula [2]=cedula3;
+		cedula [3]=cedula4;
+		cedula [4]=cedula5;
 		
 		do {
 		
@@ -34,9 +55,8 @@ public class Menu {
 			}
 
 		} else if (opcion == 2) {
+			System.out.println("Ingrese cedula a buscar");
 			String cadena1 = cedula;
-			String cadena = teclado.nextLine();
-			System.out.println("Ingrese el numero de cedula a buscar");
 			String cadena2 = teclado.nextLine();
 			boolean resultado2 = cadena1.equals(cadena2);
 			System.out.println("El numero de cedula corresponde:" + resultado2);
