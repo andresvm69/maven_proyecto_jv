@@ -10,7 +10,6 @@ public class Prueba1 {
 		Scanner teclado = new Scanner(System.in);
 		int clave = 85;
 		int opcion;
-		int opcionSalir = -1;
 		do {
 		if (clave == 85) {
 			System.out.println("Ingresar Clave");
@@ -35,7 +34,7 @@ public class Prueba1 {
 					int Monto = teclado.nextInt();
 					System.out.println("Su valor a transferir es: " + Monto);
 					int deposito=1000;
-					int Saldo= Monto-deposito;
+					int Saldo= deposito-Monto;
 					System.out.println("Su nuevo saldo es: " + Saldo);
 					
 					System.out.println(" ");
@@ -59,8 +58,7 @@ public class Prueba1 {
 		System.out.println("Clave incorrecta ");
 		System.out.println(" ");
 		}
-		} while ((opcionSalir== -1));
-		System.out.println("GRACIAS POR PREFERIRNOS ");
+		} while ((clave !=85));
 		System.out.println(" ");
 
 
