@@ -23,7 +23,7 @@ public class Main {
 			System.out.println("La clave no es la correcta");
 
 		}
-		}while(claveIngresada !="-1");
+		}while(claveIngresada.equals("-1"));
 		System.out.println("Gracias por preferirnos");
 
 		
