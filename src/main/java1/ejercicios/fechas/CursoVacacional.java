@@ -8,7 +8,10 @@ public class CursoVacacional {
 	private String nombre;
 	private LocalDate fechaInicio;
 	private LocalDate fechaFin;
+	private Instructor Instructor;
 	
+	
+	//Metodos SET Y GET	
 	
 	public String getNombre() {
 		return nombre;
@@ -27,5 +30,11 @@ public class CursoVacacional {
 	}
 	public void setFechaFin(LocalDate fechaFin) {
 		this.fechaFin = fechaFin;
+	}
+	public Instructor getInstructor() {
+		return Instructor;
+	}
+	public void setInstructor(Instructor instructor) {
+		Instructor = instructor;
 	}
 }
