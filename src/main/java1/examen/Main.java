@@ -22,22 +22,29 @@ public class Main {
 		Auto[] listaAutos = new Auto[2];
 
 		Auto auto1 = new Auto();
-		auto1.getMarca();
-		auto1.getModelo();
-		auto1.getPlaca();
-		auto1.getAñoFabricacion();
-		auto1.getKilometraje();
+		auto1.setMarca("Toyota");
+		auto1.setModelo("Prius");
+		auto1.setPlaca("PCT4578");
+		auto1.setAñoFabricacion(2000);
+		auto1.setKilometraje(20000);
 		
 		Auto auto2 = new Auto();
-		auto2.getMarca();
-		auto2.getModelo();
-		auto2.getPlaca();
-		auto2.getAñoFabricacion();
-		auto2.getKilometraje();
+		auto2.setMarca("Kia");
+		auto2.setModelo("Sportage");
+		auto2.setPlaca("PZT1078");
+		auto2.setAñoFabricacion(2000);
+		auto2.setKilometraje(10000);
+		
+		Auto auto3 = new Auto();
+		auto3.getMarca();
+		auto3.getModelo();
+		auto3.getPlaca();
+		auto3.getAñoFabricacion();
+		auto3.getKilometraje();
 		
 		listaAutos [0]=auto1;
 		listaAutos [1]=auto2;
-		
+		listaAutos [2]=auto3;
 		
 		do {
 			System.out.println("#################################CONCESIONARIO AMBACAR, elija una opción:");
@@ -98,9 +105,6 @@ public class Main {
 				System.out.println("Ingrese el numero de Placa del Auto");
 				String placaAA = teclado.nextLine();	
 				break;
-				default:
-					System.out.println("No ha elejido ninguna opcion valida");
-				break;
 				case "4"://reporte
 					Arrays.sort(listaAutos);
 					System.out.println("Lista de Autos");
@@ -113,5 +117,6 @@ public class Main {
 
 
 	}
+
 
 }
