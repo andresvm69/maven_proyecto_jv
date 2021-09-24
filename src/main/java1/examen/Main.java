@@ -37,76 +37,52 @@ public class Main {
 				opcion = teclado.nextLine();
 				switch(opcion){
 				case"a":
+					System.out.println("Ingrese el codigo Nacional: ");
+					String codigo = teclado.nextLine();	
 					System.out.println("Ingrese la Marca: ");
 					String marca = teclado.nextLine();
 					System.out.println("Ingrese Modelo: ");
 					String modelo = teclado.nextLine();
-					System.out.println("Ingrese Año de Fabricacion: ");
-					int anhio = teclado.nextInt();
-					System.out.println("Ingrese Placa: ");
-					String placa = teclado.nextLine();
 					System.out.println("Ingrese Kilometraje: ");
 					int kilo = teclado.nextInt();
+					System.out.println("Ingrese Año de Fabricacion: ");
+					int anhio1 = teclado.nextInt();
+					System.out.println("Ingrese la Placa: ");
+					String placa1 = teclado.nextLine();
 					break;
 				}
 			}while (!opcion.equals("b")); 
+				System.out.println("Ingrese el codigo de importacion: ");
+				String codigo = teclado.nextLine();
+				System.out.println("Ingrese el valor de importacion: ");
+				int valor = teclado.nextInt();
 				System.out.println("Ingrese la Marca: ");
 				String marca = teclado.nextLine();
 				System.out.println("Ingrese Modelo: ");
 				String modelo = teclado.nextLine();
 				System.out.println("Ingrese Año de Fabricacion: ");
 				int anhio = teclado.nextInt();
-				System.out.println("Ingrese Placa: ");
+				System.out.println("Ingrese la Placa: ");
 				String placa = teclado.nextLine();
 				System.out.println("Ingrese Kilometraje: ");
-				int kilo = teclado.nextInt();
-				System.out.println("Ingrese el codigo de importacion ");
-				String codigo = teclado.nextLine();	
-				System.out.println("Ingrese el valor de importacion ");
-				int valor = teclado.nextInt();
-
+				int kilo1 = teclado.nextInt();
 			break;
 			case "2":
 				do {
-				System.out.println("a. Ingresar un libro");
-				System.out.println("b. Prestar un libro");
-				System.out.println("c. Aplazar fecha de entrega");
+				System.out.println("Ingresar el numero de placa del Auto");
+				String placaA = teclado.nextLine();
 					opcion = teclado.nextLine();
-					switch(opcion){
-					case"a":
-						System.out.println("Ingrese Codigo: ");
-						String codigo1 = teclado.nextLine();
-						System.out.println("Ingrese Nombre: ");
-						String nombre = teclado.nextLine();
-						System.out.println("Ingrese Autor: ");
-						String autor1 = teclado.nextLine();
-						System.out.println("Ingrese Año de publicacion: ");
-						int anhio = teclado.nextInt();
-						System.out.println("Ingrese Editorial: ");
-						String Editorial = teclado.nextLine();
-						System.out.println("Ingrese Cantidad de paginas: ");
-						int Cantidad = teclado.nextInt();
-						System.out.println("Ingrese Precio: ");
-						int precio = teclado.nextInt();
-						break;
-					case"b":
-						System.out.println("Ingrese el codigo del libro: ");
-						String codigoL = teclado.nextLine();
-						break;
-					}
 				}while (!opcion.equals("c")); 
-				System.out.println("Ingrese el codigo del libro ");
-				String codigoLib = teclado.nextLine();	
-				
-				System.out.println("Ingrese la cedula del estudiante que se presto el libro");
-				int cedula1 = teclado.nextInt();
-
 			case "3": 
-				System.out.println("Cerrando el sistema");
+				System.out.println("Ingrese el numero de Placa del Auto");
+				String placaAA = teclado.nextLine();	
 				break;
 				default:
 					System.out.println("No ha elejido ninguna opcion valida");
 				break;
+				case "4"://reporte
+					
+					break;
 			}
 
 		} while (!opcion.equals("3"));// similar a opcion!=3
