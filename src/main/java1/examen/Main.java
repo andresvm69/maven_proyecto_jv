@@ -1,5 +1,6 @@
 package examen;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -17,6 +18,26 @@ public class Main {
 		Scanner lector = new Scanner(System.in);
 		String opcion;
 		String op;
+		
+		Auto[] listaAutos = new Auto[2];
+
+		Auto auto1 = new Auto();
+		auto1.getMarca();
+		auto1.getModelo();
+		auto1.getPlaca();
+		auto1.getAñoFabricacion();
+		auto1.getKilometraje();
+		
+		Auto auto2 = new Auto();
+		auto2.getMarca();
+		auto2.getModelo();
+		auto2.getPlaca();
+		auto2.getAñoFabricacion();
+		auto2.getKilometraje();
+		
+		listaAutos [0]=auto1;
+		listaAutos [1]=auto2;
+		
 		
 		do {
 			System.out.println("#################################CONCESIONARIO AMBACAR, elija una opción:");
@@ -81,7 +102,9 @@ public class Main {
 					System.out.println("No ha elejido ninguna opcion valida");
 				break;
 				case "4"://reporte
-					
+					Arrays.sort(listaAutos);
+					System.out.println("Lista de Autos");
+					System.out.println(Arrays.toString(listaAutos));
 					break;
 			}
 
